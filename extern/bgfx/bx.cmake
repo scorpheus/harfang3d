@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.1)
 
 set( BX_SRCS 
-	bx/src/allocator.cpp    bx/src/debug.cpp     bx/src/math.cpp       bx/src/sort.cpp
-	bx/src/dtoa.cpp         bx/src/mutex.cpp     bx/src/string.cpp     bx/src/settings.cpp
-	bx/src/bounds.cpp       bx/src/easing.cpp    bx/src/os.cpp         bx/src/thread.cpp
-	bx/src/bx.cpp           bx/src/file.cpp      bx/src/process.cpp    bx/src/timer.cpp
-	bx/src/commandline.cpp  bx/src/filepath.cpp  bx/src/semaphore.cpp  bx/src/url.cpp
-	bx/src/crtnone.cpp      bx/src/hash.cpp
+	bx/src/allocator.cpp  bx/src/bx.cpp    bx/src/commandline.cpp
+	bx/src/crtnone.cpp    bx/src/dtoa.cpp  bx/src/easing.cpp  bx/src/file.cpp
+	bx/src/filepath.cpp   bx/src/debug.cpp bx/src/hash.cpp    bx/src/math.cpp
+	bx/src/mutex.cpp      bx/src/os.cpp    bx/src/process.cpp bx/src/semaphore.cpp
+	bx/src/settings.cpp   bx/src/sort.cpp  bx/src/string.cpp  bx/src/thread.cpp
+	bx/src/timer.cpp      bx/src/url.cpp
 )
 
 set( BX_HDRS
