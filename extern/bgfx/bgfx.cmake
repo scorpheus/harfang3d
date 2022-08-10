@@ -58,25 +58,13 @@ target_include_directories( bgfx
 		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/bgfx/include>
 )
 
-target_compile_definitions( bgfx PRIVATE "$<$<CONFIG:Debug>:BGFX_CONFIG_DEBUG=1>" )
-target_compile_definitions( bgfx PRIVATE BGFX_CONFIG_DEBUG=0 )
-target_compile_definitions( bgfx PUBLIC BX_CONFIG_DEBUG=0 )
 target_compile_definitions( bgfx PRIVATE BGFX_GL_CONFIG_TEXTURE_READ_BACK_EMULATION=1 )
 target_compile_definitions( bgfx PRIVATE BGFX_GL_CONFIG_BLIT_EMULATION=1 )
-
-target_compile_definitions( bgfx PRIVATE BGFX_CONFIG_RENDERER_OPENGLES_MIN_VERSION=30 )
-target_compile_definitions( bgfx PRIVATE BGFX_CONFIG_RENDERER_OPENGL_MIN_VERSION=41 )
-	
-if(BGFX_CONFIG_DEBUG)
-	target_compile_definitions( bgfx PRIVATE BGFX_CONFIG_DEBUG=1 )
-endif()
-
 if( MSVC )
 	target_compile_definitions( bgfx PRIVATE "_CRT_SECURE_NO_WARNINGS" )
 endif()
 
 target_compile_definitions( bgfx PUBLIC BGFX_CONFIG_MULTITHREADED=0 )
-target_compile_definitions( bgfx PUBLIC BGFX_SHARED_LIB_BUILD=1 )
 
 target_link_libraries( bgfx PUBLIC bx bimg )
 

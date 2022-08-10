@@ -232,5 +232,3 @@ target_include_directories( bimg
 target_link_libraries( bimg bx astc-codec astc edtaa3 etc1 etc2 iqa squish nvtt pvrtc miniz )
 set_property( TARGET bimg PROPERTY FOLDER "bgfx")
 set_property( TARGET bimg PROPERTY PUBLIC_HEADER ${CMAKE_CURRENT_SOURCE_DIR}/bimg/include/bimg/bimg.h )
-
-target_compile_definitions( bimg PUBLIC BX_CONFIG_DEBUG=0 )
