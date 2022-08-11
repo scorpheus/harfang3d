@@ -62,6 +62,11 @@ Languages supported
 * Python _(3.2+)_
 * Lua _(5.3)_
 * Go _(1+, experimental)_
+
+Wasm (Experimental)
+* See example code at:
+  * [C++ app](https://github.com/scorpheus/harfang_emscripten_c)
+
 <a name="subsection_1b"></a>
 ## Screenshots
 
